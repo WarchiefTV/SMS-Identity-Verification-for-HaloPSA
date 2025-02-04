@@ -16,7 +16,7 @@ This Azure Function App provides SMS-based identity verification for HaloPSA usi
 
 ## Deployment Option 1: Deploy directly to Azureusing ARM Template
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fcscaminaci%2FSMS-Identity-Verification-for-HaloPSA%2Fblob%2Fmain%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcscaminaci%2FSMS-Identity-Verification-for-HaloPSA%2Frefs%2Fheads%2Fmain%2Fazuredeploy.json)
 
 ## Deployment Option 2: Deploy Manually with ARM Template
 
