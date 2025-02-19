@@ -29,5 +29,8 @@
         "mspName": {
             "value": ""
         }
+        "location": {
+            "value": ""
+        }
     }
 } 
