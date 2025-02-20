@@ -263,9 +263,14 @@ try {
 
     # Generate HTML response
     $Note = @"
-<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; border-radius: 10px; background: linear-gradient(145deg, #ffffff, #f0f0f0); box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; border-radius: 10px;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+
     <div style="text-align: center; margin-bottom: 20px;">
-        <h1 style="color: #2c3e50; margin: 0; padding: 10px; font-size: 24px; border-bottom: 2px solid #3498db;">Identity Verification Details</h1>
+        <h1 style="color: #2c3e50; margin: 0; padding: 10px; font-size: 24px; border-bottom: 2px solid #3498db;">
+            Identity Verification Details
+        </h1>
     </div>
     
     <div style="background: #3498db; color: white; padding: 20px; border-radius: 8px; text-align: center; margin: 15px 0;">
@@ -273,25 +278,52 @@ try {
         <div style="font-size: 14px; margin-top: 5px;">Verification Code</div>
     </div>
 
+    <!-- Request Information -->
     <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #2ecc71;">
         <div style="font-size: 14px; color: #7f8c8d; margin-bottom: 5px;">Request Information</div>
-        <div style="color: #2c3e50; margin-bottom: 3px;"><strong>Request ID:</strong> $RequestID</div>
-        <div style="color: #2c3e50; margin-bottom: 3px;"><strong>Timestamp:</strong> $Timestamp</div>
-        <div style="color: #2c3e50;"><strong>Target Number:</strong> $MFAPhone</div>
+        <div style="color: #2c3e50; margin-bottom: 3px;">
+            <strong>Request ID:</strong> $RequestID
+        </div>
+        <div style="color: #2c3e50; margin-bottom: 3px;">
+            <strong>Timestamp:</strong> $Timestamp
+        </div>
+        <div style="color: #2c3e50;">
+            <strong>Target Number:</strong> $MFAPhone
+        </div>
     </div>
 
+    <!-- User Details -->
     <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #e74c3c;">
         <div style="font-size: 14px; color: #7f8c8d; margin-bottom: 5px;">User Details</div>
-        <div style="color: #2c3e50; margin-bottom: 3px;"><strong>User:</strong> $HaloUser</div>
-        <div style="color: #2c3e50; margin-bottom: 3px;"><strong>Tenant:</strong> $TenantID</div>
+        <div style="color: #2c3e50; margin-bottom: 3px;
+                    white-space: normal;
+                    word-break: break-word;
+                    overflow-wrap: break-word;">
+            <strong>User:</strong> $HaloUser
+        </div>
+        <div style="color: #2c3e50; margin-bottom: 3px;">
+            <strong>Tenant:</strong> $TenantID
+        </div>
     </div>
 
+    <!-- Authentication Methods -->
     <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #f1c40f;">
         <div style="font-size: 14px; color: #7f8c8d; margin-bottom: 5px;">Authentication Methods</div>
-        <div style="color: #2c3e50; margin-bottom: 3px;"><strong>Methods:</strong> $AuthenticationMethods</div>
-        <div style="color: #2c3e50;"><strong>Details:</strong> $AdditionalDetail</div>
+        <div style="color: #2c3e50; margin-bottom: 3px;
+                    white-space: normal;
+                    word-break: break-word;
+                    overflow-wrap: break-word;">
+            <strong>Methods:</strong> $AuthenticationMethods
+        </div>
+        <div style="color: #2c3e50;
+                    white-space: normal;
+                    word-break: break-word;
+                    overflow-wrap: break-word;">
+            <strong>Details:</strong> $AdditionalDetail
+        </div>
     </div>
 
+    <!-- Twilio Response -->
     <div style="background: #27ae60; color: white; padding: 10px; border-radius: 5px; text-align: center; margin-top: 20px;">
         <span style="font-size: 16px;">Twilio Response: Success</span>
     </div>
